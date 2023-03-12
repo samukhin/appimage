@@ -1,0 +1,18 @@
+app: app
+ingredients:
+  dist: focal
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+  packages:
+    - nodejs
+script:
+  - touch app.png
+  - cat > app.desktop <<\EOF
+  - [Desktop Entry]
+  - Type=Application
+  - Categories=Application
+  - Name=app
+  - Icon=app
+  - Exec=node
+  - Terminal=true
+  - EOF
