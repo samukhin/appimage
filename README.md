@@ -2,4 +2,4 @@ Download https://github.com/AppImageCommunity/pkg2appimage/releases
 
 And
 
-./pkg2appimage.AppImage app.yml
+ARCH=x86_64 ./pkg2appimage.AppImage app.yml
